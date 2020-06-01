@@ -2,7 +2,7 @@ FROM alpine
 
 ENV TERRAFORM_VERSION=0.12.24
 
-RUN apk update && apk add curl git python py-pip
+RUN apk update && apk add curl git python3 py-pip
 
 # Install terraform
 RUN curl -LO https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
